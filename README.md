@@ -5,13 +5,13 @@ Npm version v6.11.3
 
 ### Setup
 Clonar repositorio e installar módulos
-#### npm install
+#### npm install
 
 Iniciar el servidor con
 #### npm run dev
 
 ### Para correr pruebas
-npm run test
+#### npm run test
 
 ## Si tienes istalado Docker
 1. clonar repositorio del front en angular, este contiene el docker-compose.yml
