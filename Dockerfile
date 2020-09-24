@@ -1,17 +1,11 @@
-FROM node:12-alpine
+# specify a base image
+FROM node:12.12.0-alpine
 
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
-
-WORKDIR /home/node/app
-
-COPY package*.json ./
-
-USER node
-
+WORKDIR /app
+COPY package.json /app
 RUN npm install
-
-COPY --chown=node:node . .
+COPY . /app
 
 EXPOSE 3200
 
-CMD [ "node", "run", "dev" ]
+CMD [ "npm", "run", "dev" ]
