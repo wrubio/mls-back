@@ -7,6 +7,10 @@ Npm version v6.11.3
 Clonar repositorio e installar módulos
 #### npm install
 
+### Crear archivo .env con la siguiente información:
+#### ML_API_SERVICE_URL=https://api.mercadolibre.com
+#### PORT=3200
+
 Iniciar el servidor con
 #### npm run dev
 
