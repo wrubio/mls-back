@@ -1,3 +1,5 @@
+require('dotenv').config()
+require('./config').config()
 const express = require('express')
 const morgan = require('morgan')
 const itemsRoute = require('./routes/items.route')

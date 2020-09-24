@@ -1,14 +1,12 @@
 const app = require('./app')
-const { port } = require('./config')
 const debug = require('debug')('mls:server')
 const http = require('http')
 
 /**
  * Get port from environment and store in Express.
  */
-const getEnvPort = normalizePort(port || '3400')
-app.set('port', getEnvPort)
-
+const port = normalizePort(process.env.PORT || '3000')
+app.set('port', port)
 /**
  * Normalize a port into a number, string, or false.
  */
